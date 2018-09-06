@@ -12,8 +12,28 @@ body {
 	height: 100%;
 }
 
-.cuerpo {
-	text-align: right;
+.cuerpo{
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-top: 1rem;
+}
+
+.busquedaCertificados{
+	width: 60rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#texto{
+	width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lbltexto{
+	text-align: justify;
+	font-family: "Roboto-Light";
+	font-size: 13px;
 }
 
 .icono{
@@ -25,6 +45,19 @@ body {
 	border-bottom-left-radius: 0.4em;
 }
 
+.radBusqueda{
+	margin-top: 1rem;
+	vertical-align: text-bottom;
+}
+
+.lblBusqueda{
+	font-family: "Roboto-Light";
+	font-size: 13px;
+}
+
+#identificacion{
+	margin-left: 3rem;
+}
 /* Seccion Pie Página */	
 
 .imgRedesSociales {

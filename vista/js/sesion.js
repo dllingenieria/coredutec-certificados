@@ -1,45 +1,6 @@
  $(document).on('ready',function(){
-     /*Inicio Cerrar Sesion
-      $(document).idle({
-          onIdle: function(){
-                popUpConfirmacionSesion("Su sesión se va a cerrar por inactividad!     Desea cerrar sesión?",1,cerrarSesion);
-              },
-              onActive: function(){
-                //$('#status').toggleClass('idle').html('Active!');
-              },
-              idle: 1800000,
-              keepTracking: true
-            });    
-            //Fin Cerrar Sesion   */
-
+     
     });
-
-
-/*para el confirm
-function popUpConfirmacionSesion(msj, fn, fn1){
-    //contenedor vacion
-     var contenedor = $("#contenedor");
-     //se le envia a contenedor el contenido de element_to_pop_upCon1
-    contenedor.html( $("#element_to_pop_upConSesion").html() );
-    /*como el id textoConfirmacion2 esta dos veces (en contenedor y en element_to_pop_upCon1)
-    * se esta poniendo el texto en el de contenedor
-    
-    $("#textoConfirmacionSesion", contenedor ).text(msj);
-    $("[id=btnAceptar]:button", contenedor ).click(function(){ 
-        if( fn ) fn(); 
-    } );
-    
-    $("[id=btnCerrar]:button", contenedor ).click(function(){
-        if( fn1 ) fn1(); 
-    } );
-    
-    //se muestra el conetenedor 
-    $('#contenedor').bPopup({
-        speed: 450,
-        transition: 'slideDown'
-    });
-
-}*/
 
 var pop_err = '<div id="element_to_pop_upError" class="element_to_pop_upError"><div><label id="textoError" class="popup" style="margin-left: 174px; font-family: \'Roboto-Light\'; font-size: 18px;"> </label></div><br><br><div><label id="textoError1" class="popup" style="margin-left: 174px; font-family: \'Roboto-Light\'; font-size: 18px;"> </label></div></div>';
  
@@ -333,45 +294,7 @@ function IniciarSesion() {
 				sessionStorage.esCalidad=roles[6];
                 sessionStorage.esSAcademica=roles[7];
                 sessionStorage.esAvanzado=roles[8];
-                window.location = "vista/html/iniciarSesion.html";
-     //            var rolesDisponibles=0;
-     //            for (var i = 0; i < roles.length; i++) {
-     //                if (roles[i] === "1") {
-     //                    rolesDisponibles++;
-     //                }
-     //            }
-     //            if (rolesDisponibles>1) {
-     //                window.location = "vista/html/iniciarSesion.html";
-     //            }else{
-     //                if (sessionStorage.esAdministrador==="1") {
-     //                    window.location = "vista/html/captura.html";
-     //                }
-     //                if (sessionStorage.esDocente==="1") {
-     //                    window.location = "vista/html/docente.html";
-     //                }
-     //                if (sessionStorage.esMatriculador==="1") {
-     //                    window.location = "vista/html/busqueda.html";
-     //                }
-     //                if (sessionStorage.esCallCenter==="1") {
-     //                    window.location = "vista/html/callCenter.html";
-     //                }
-					// if (sessionStorage.esAlimentacion==="1") {
-     //                    window.location = "vista/html/alimentacion.html";
-     //                }
-					// if (sessionStorage.esAcademico==="1") {
-     //                    window.location = "vista/html/academico.html";
-     //                }
-					// if (sessionStorage.esCalidad==="1") {
-     //                    window.location = "vista/html/calidad.html";
-     //                }
-     //                if (sessionStorage.esSAcademica==="1") {
-     //                    window.location = "vista/html/certificado.html";
-     //                }
-     //                if (sessionStorage.esAvanzado==="1") {
-     //                    window.location = "vista/html/busqueda.html";
-     //                }
-     //            }
-				
+                window.location = "vista/html/iniciarSesion.html";				
 				   },1000);
             }else {
                 $("#textoError").text("Usuario o Contraseña incorrectos");
