@@ -16,66 +16,6 @@ body {
 	text-align: right;
 }
 
-.botonRegistro{
-	padding-left: 2.5rem;
-	padding-right: 2.5rem;
-	margin-top: 1.6rem;
-}
-
-.contenedorIniciarSesion{
-	z-index:6;
-	position: relative;
-	background-color: #f7ea32;
-	border-radius: 0.3rem;
-	width: 25rem;
-	height: 16rem;
-	display: inline-block;
-	margin-top: 4rem;
-	margin-right: 4rem;
-	padding-right: 1rem;
-}
-
-.tituloIniciarSesion{
-	z-index:6;
-	position: absolute;
-	background-color: #003265;
-	color: #ffffff;
-	top: 2rem;
-	left: -1.5rem;
-	width: 90%;
-	height: 4%;
-	padding-left: 2.2rem;
-	padding-bottom: 1.5rem;
-	padding-top: 0.1rem;
-	text-align: left;
-	font-size: 1.5em;
-	border-radius: 0.3rem;
-}
-
-.formulario{
-	z-index:6;
-	margin-top: 6rem;
-	margin-right: 1.22rem;
-}
-
-.campoIniciarSesion{
-	z-index:6;
-	height: 2.18rem;
-	width: 13rem;
-	padding-left: 0.9rem;
-	border-radius: 0rem 0.3rem 0.3rem 0rem;
-	border: none;
-	vertical-align:top;
-	font-family: "Roboto-Thin";
-	font-size: 18px;
-	color: #2d4191;
-	/*padding-left: 0.5rem;*/
-}
-
-.campoIniciarSesion:focus{
-	outline: none;
-}
-
 .icono{
 	z-index:6;
 	padding-left: 0.5rem;
@@ -84,7 +24,6 @@ body {
 	border-top-left-radius: 0.4em;
 	border-bottom-left-radius: 0.4em;
 }
-
 
 /* Seccion Pie Página */	
 
@@ -109,45 +48,7 @@ body {
 	width: 17rem;	
 }
 
-/* Sección Recuperar Contraseña */
-
-#formaCuadroAzulError {
-	position:absolute;
-	width:391px;
-	height:69px;
-	border-radius: 4px 4px 4px 4px;
-	z-index:2;
-	background:#003265;
-	margin-top: 435px;
-	margin-left: 900px;
-}
-
-#lblDatosIncorrectos {
-	position:absolute;
-	width:277px;
-	height:24px;
-	z-index:16;
-	margin-left: 983px;
-	margin-top: 443px;
-	font-family: "Roboto-Light";
-	font-size: 18px;
-	color: #ffffff;
-}
-
-#lblOlvidoContrasena {
-	position:absolute;
-	width:277px;
-	height:24px;
-	z-index:16;
-	margin-left: 989px;
-	margin-top: 469px;
-	font-family: "Roboto-Bold";
-	font-size: 18px;
-	color: #f7ea32;
-}
-
-
-/* Seccion Botones */
+/* Seccion Botones 
 
 .BotonEntrar {
 	margin-top: 1rem;
@@ -184,4 +85,4 @@ body {
 	font-size: 12px;
 	color: #003265;
 	margin-right: 5rem;
-}
+}*/
