@@ -81,27 +81,46 @@ body {
 	width: 17rem;	
 }
 
-/* Seccion Botones 
-
-.BotonEntrar {
-	margin-top: 1rem;
-	margin-right: 0rem;
-	width:120px;
-	height:29px;
-	color: #ffffff;
-	font-family: "Roboto-Medium";
-	font-size: 17px;
-	border-radius: 6px 6px 6px 6px;
-	background-color: #003265;
-	z-index: 7;
-	transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-	border:1px solid #003265;
-	cursor:pointer;
+.azul{
+	display: inline-block;
+	width:9rem;
+	font-family: "Roboto-Light";
+	padding-bottom: 0.3rem;
+	padding-top: 0.3rem;
+	font-size: 14px;
+	border-radius: 3px 0px 0px 3px;
 }
 
-.BotonEntrar:hover {
+.campo{
+	vertical-align: middle;
+	width: 5rem;
+	font-family: "Roboto-Light";
+	padding-bottom: 0.2rem;
+	padding-top: 0.2rem;
+	padding-left: 0.6rem;
+	font-size: 12px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+#numeroRegistro,#numeroDocumento{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+#lblNDocumento{
+	margin-left: 2rem;
+}
+
+#cmbTipoDocumento{
+	height: 27px;
+}
+
+/* Seccion Botones */
+#btnConsultar1,#btnConsultar2 {
+	margin-left: 2rem;
+}
+
+/*.BotonEntrar:hover {
 	text-decoration:none;
     background-color:#ffffff;
 	font-family: "Roboto-Bold";
