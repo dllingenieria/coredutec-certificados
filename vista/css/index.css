@@ -6,7 +6,7 @@
 /* Seccion Cabecera */	
 
 body {
-	background-image: url(../images/patrones.png);
+	background-image: url(../images/Fw.jpg);
 	background-size: cover;
 	width: 100%
 	height: 100%;
@@ -81,41 +81,57 @@ body {
 	width: 17rem;	
 }
 
-/* Seccion Botones 
-
-.BotonEntrar {
-	margin-top: 1rem;
-	margin-right: 0rem;
-	width:120px;
-	height:29px;
-	color: #ffffff;
-	font-family: "Roboto-Medium";
-	font-size: 17px;
-	border-radius: 6px 6px 6px 6px;
-	background-color: #003265;
-	z-index: 7;
-	transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-	border:1px solid #003265;
-	cursor:pointer;
-}
-
-.BotonEntrar:hover {
-	text-decoration:none;
-    background-color:#ffffff;
-	font-family: "Roboto-Bold";
-    color: #003265;
-	border-top:1px solid #ffffff;
-	border-right:1px solid #ffffff;
-	border-bottom:1px solid #ffffff;
-	border-left:1px solid #ffffff;
-	cursor:pointer;
-}
-
-#recuperarContrasena {
+.azul{
+	display: inline-block;
+	width:9rem;
 	font-family: "Roboto-Light";
+	padding-bottom: 0.3rem;
+	padding-top: 0.3rem;
+	font-size: 14px;
+	border-radius: 3px 0px 0px 3px;
+}
+
+.campo{
+	vertical-align: middle;
+	width: 5rem;
+	font-family: "Roboto-Light";
+	padding-bottom: 0.2rem;
+	padding-top: 0.2rem;
+	padding-left: 0.6rem;
 	font-size: 12px;
-	color: #003265;
-	margin-right: 5rem;
-}*/
+	border-radius: 0px 5px 5px 0px;
+}
+
+#numeroRegistro,#numeroDocumento{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+#lblNDocumento{
+	margin-left: 2rem;
+}
+
+#cmbTipoDocumento{
+	height: 27px;
+}
+
+/* Seccion Botones */
+#btnConsultar1,#btnConsultar2 {
+	margin-left: 2rem;
+}
+
+#txtNRegistro {
+	width: 8rem;
+}
+
+#WindowLoad
+{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:3200;
+    filter:alpha(opacity=65);
+   -moz-opacity:65;
+    opacity:0.65;
+    background:#999;
+}

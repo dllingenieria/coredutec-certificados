@@ -1,6 +1,6 @@
 .dataTable th, .dataTable td { 
 	white-space: nowrap; cursor: pointer;
-	font-size: 0.95rem;
+	font-size: 0.70rem;
 }
 
 .dataTable td{

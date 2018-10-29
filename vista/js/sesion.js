@@ -147,7 +147,7 @@ function cargarCabezote(user){
 	}else if($('#page1').length) { 
 		data+='<img class="imgLogo" src="vista/images/logocet2.png" alt="">';
 	}else{
-		data+='<img class="imgLogo" src="vista/images/logocet2.png" alt="">';
+		data+='<img class="imgLogo" src="../images/logocet2.png" alt="">';
 	}
 	
 	data+='</div>';
@@ -160,12 +160,12 @@ function cargarFooter(){
 		data+='<div class="contenedorTitulo">';
 		data+='<div class="titulo1">SIREX - Sistema de Información - Proceso Relacionamiento con el Sector Externo</div>';
 		data+='</div>';
-		data+='<img class="imgLogos" src="../images/barraLogos.png" alt="">';
+		data+='<img class="imgLogos" src="vista/images/barraLogos.png" alt="">';
 	}else{
 		data+='<div class="contenedorTitulo">';
 		data+='<div class="titulo1">SIREX - Sistema de Información - Proceso Relacionamiento con el Sector Externo</div>';
 		data+='</div>';
-		data+='<img class="imgLogos" src="vista/images/barraLogos.png" alt="">';	
+		data+='<img class="imgLogos" src="../images/barraLogos.png" alt="">';	
 	}
 	
 	$("footer").html(data);	
