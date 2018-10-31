@@ -53,6 +53,7 @@ class clsCertificados {
                     $registro = array();
                 }
             $rs->closeCursor();
+            // Se crea el certificado
             }else{
                 $resultado = 0;
             }

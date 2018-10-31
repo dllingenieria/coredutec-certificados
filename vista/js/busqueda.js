@@ -177,20 +177,20 @@ $(function() {
 				mostrarPopUpError("Hubo un problema para generar el certificado");
 			}else{
 				jsRemoveWindowLoad();
-				pCodigoCertificado = data[0].CodigoCertificado;
-				pFechaCertificado = data[0].FechaCertificado;
-		        pTipoIdentificacion = data[0].TipoIdentificacion;
-		        pNumeroIdentificacion = data[0].NumeroIdentificacion;
-		        pLugarExpedicion = data[0].LugarExpedicion;
-		        pEstudiante = data[0].Estudiante;
-		        pCurso = data[0].Curso;
-		        pModulo = data[0].Modulo;
-		        pDuracion = data[0].Duracion;
-		        pConvenio = data[0].Convenio;
-				pRuta = data[0].Ruta;
-				window.open("../../modelo/certificado.php?estudiante="+pEstudiante+"&&tipoidentificacion="+pTipoIdentificacion+"&&numeroidentificacion="+pNumeroIdentificacion+"&&lugarexpedicion="+pLugarExpedicion+"&&curso="+pCurso+"&&modulo="+pModulo+"&&duracion="+pDuracion+"&&fechacertificado="+pFechaCertificado+"&&codigocertificado="+pCodigoCertificado+"&&ruta="+pRuta,'_blank');
+				$("#txtCodigoCertificado").val(data[0].CodigoCertificado);
+				$("#txtFechaCertificado").val(data[0].FechaCertificado);
+		        $("#txtTipoIdentificacion").val(data[0].TipoIdentificacion);
+		        $("#txtNumeroIdentificacion").val(data[0].NumeroIdentificacion);
+		        $("#txtLugarExpedicion").val(data[0].LugarExpedicion);
+		        $("#txtEstudiante").val(data[0].Estudiante);
+		        $("#txtCurso").val(data[0].Curso);
+		        $("#txtModulo").val(data[0].Modulo);
+		        $("#txtDuracion").val(data[0].Duracion);
+		        $("#txtConvenio").val(data[0].Convenio);
+				$("#txtRuta").val(data[0].Ruta);
+				$("#frmCertificadoModulo").submit();
 			}		
-		}, "json");		
+		}, "json");
 	});
 
 	//----- Consulta en la base de datos los valores de las listas -----//

@@ -1,0 +1,96 @@
+[30-Oct-2018 10:48:39 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:48:39 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:10
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 10
+[30-Oct-2018 10:49:19 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:49:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 8
+[30-Oct-2018 10:49:20 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:49:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 8
+[30-Oct-2018 10:49:21 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:49:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 8
+[30-Oct-2018 10:49:21 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:49:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 8
+[30-Oct-2018 10:49:21 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [codigocertificado] => 1
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 10:49:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function getPDO() on null in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php on line 8
+[30-Oct-2018 11:13:32 America/Bogota] Problemas en ::()
+No se pudo definir un receptor de mensajes. Argumentos recibidos:
+Array
+(
+    [estudiante] => ANA HELDA BAEZ QUINTERO
+    [tipoidentificacion] => C.C.
+    [numeroidentificacion] => 1052381644
+    [lugarexpedicion] => Duitama
+    [curso] => TALLER CAJA DE HERRAMIENTAS - 8H
+    [modulo] => TALLER CAJA DE HERRAMIENTAS
+    [duracion] => 8 Horas
+    [fechacertificado] => 2018-09-15
+    [codigocertificado] => SECMPC-AAA-000001
+    [ruta] => 0
+    [PHPSESSID] => d2835b2f14fd21247a2a662b0288e699
+)
+
+[30-Oct-2018 11:13:34 America/Bogota] PHP Fatal error:  Uncaught Exception: FPDF error: Some data has already been output, can't send PDF file (output started at /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/controlador/fachada.php:37) in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/includes/fpdf181/fpdf.php:271
+Stack trace:
+#0 /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/includes/fpdf181/fpdf.php(1052): FPDF->Error('Some data has a...')
+#1 /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/includes/fpdf181/fpdf.php(999): FPDF->_checkoutput()
+#2 /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/modelo/certificado.php(154): FPDF->Output('I', 'SECMPC-AAA-0000...')
+#3 {main}
+  thrown in /Users/gjohnj/Mega/MEGAsync/Dll Ingeniería/htdocs/certificados/includes/fpdf181/fpdf.php on line 271
