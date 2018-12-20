@@ -75,7 +75,7 @@ set_time_limit(0);
 				$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
 				
 				//Firma
-				$this->Image('../vista/images/firma.PNG',115,130,50);
+				$this->Image($_REQUEST['txtRutaFirma'],115,130,50);
 				//Salto de línea
 				$this->Ln(30);
 				
@@ -85,11 +85,11 @@ set_time_limit(0);
 				
 				$this->SetFont('Arial','B',12);
 				//Movernos a la derecha
-				$this->Cell(260,5,utf8_decode("MARÍA VIVIANA CRUZ MORENO"),0,2,'C');
+				$this->Cell(260,5,utf8_decode($_REQUEST['txtNombreSecretaria']),0,2,'C');
 				
 				$this->SetFont('Arial','B',10);
 				//Movernos a la derecha
-				$this->Cell(260,5,utf8_decode("Secretaría Académica"),0,2,'C');
+				$this->Cell(260,5,utf8_decode("Secretaria Académica"),0,2,'C');
 				
 				$this->SetFont('Arial','B',10);
 				$fecha = explode("-",$_REQUEST['txtFechaCertificado']);

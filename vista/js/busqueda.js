@@ -188,6 +188,9 @@ $(function() {
 		        $("#txtDuracion").val(data[0].Duracion);
 		        $("#txtConvenio").val(data[0].Convenio);
 				$("#txtRuta").val(data[0].Ruta);
+				$("#txtNombreSecretaria").val(data[0].NombreSecretaria);
+				pRutaFirma = data[0].RutaFirma;
+				$("#txtRutaFirma").val('http://localhost/coredutec'+pRutaFirma.substr(5));
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");
