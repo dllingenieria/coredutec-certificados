@@ -53,7 +53,7 @@ $(function() {
 
 	//----- Valida que solo se ingrese en las cajas de texto los valores apropiados -----//
 	$('#txtNDocumento').validCampoFranz('0123456789');
-	$('#txtNRegistro').validCampoFranz('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-');
+	$('#txtNRegistro').validCampoFranz('0123456789SECMPCAB-');
 
 	//----- Consulta en la base de datos los certificados disponibles por # de registro -----//
 	function consultarCertificadosPorRegistro(){
@@ -190,7 +190,7 @@ $(function() {
 				$("#txtRuta").val(data[0].Ruta);
 				$("#txtNombreSecretaria").val(data[0].NombreSecretaria);
 				pRutaFirma = data[0].RutaFirma;
-				$("#txtRutaFirma").val('http://localhost/coredutec'+pRutaFirma.substr(5));
+				$("#txtRutaFirma").val('https://sirex.cetcolsubsidio.edu.co'+pRutaFirma.substr(5));
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");
