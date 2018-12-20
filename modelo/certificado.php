@@ -18,7 +18,7 @@ set_time_limit(0);
 				$this->Cell(80);
 				//Título
 				//$this->Cell(30,10,'Title',1,0,'C');
-				$this->Image('../vista/images/logo-cet.png',106,7);
+				$this->Image('../vista/images/logo-cet.png',104,12,90);
 				//Movernos a la derecha
 				$this->Cell(80);
 				//Título
