@@ -9,7 +9,7 @@ set_time_limit(0);
 			function Header(){
 				//---- HORIZONTAL -------
 				//Marca de agua
-				$this->Image('../vista/images/marcadeagua.png',20,70,240);
+				$this->Image('../vista/images/marcadeagua.png',20,65,240);
 				//Logo
 				$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
 				//Arial bold 15
