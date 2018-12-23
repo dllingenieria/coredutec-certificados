@@ -51,12 +51,12 @@ set_time_limit(0);
 				$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 				//Para colocar la leyenda de los módulos y cursos a los que asistió
 				switch ($_REQUEST['txtRuta']) {
-				    case 0:
+				    case '0':
 				        $modulo = "Asistió al módulo ".$_REQUEST['txtModulo']." del ";
 				        $curso = $_REQUEST['txtCurso'];
 				        break;
-				    case 4:
-				    case 5:
+				    case '4':
+				    case '5':
 				        $modulo = "Asistió al módulo ".$_REQUEST['txtModulo']." del curso";
 				        $curso = $_REQUEST['txtCurso'];
 				        break;
@@ -75,7 +75,7 @@ set_time_limit(0);
 				$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
 				
 				//Firma
-				$this->Image($_REQUEST['txtRutaFirma'],115,130,50);
+				$this->Image($_REQUEST['txtRutaFirma'],115,130);
 				//Salto de línea
 				$this->Ln(30);
 				
@@ -89,7 +89,7 @@ set_time_limit(0);
 				
 				$this->SetFont('Arial','B',10);
 				//Movernos a la derecha
-				$this->Cell(260,5,utf8_decode("Secretaria Académica"),0,2,'C');
+				$this->Cell(260,5,utf8_decode("Secretaría Académica"),0,2,'C');
 				
 				$this->SetFont('Arial','B',10);
 				$fecha = explode("-",$_REQUEST['txtFechaCertificado']);

@@ -189,11 +189,8 @@ $(function() {
 		        $("#txtConvenio").val(data[0].Convenio);
 				$("#txtRuta").val(data[0].Ruta);
 				$("#txtNombreSecretaria").val(data[0].NombreSecretaria);
-				/*pRutaFirma = data[0].RutaFirma;
-				pRutaFirma1 = 'https://sirex.cetcolsubsidio.edu.co'+pRutaFirma.substr(5);
-				$("#txtRutaFirma").val(pRutaFirma1);*/
-				$("#txtRutaFirma").val('http://www.odg.com.co/imagenes/firma/logo-firma.png');
-				//$("#txtRutaFirma").val('https://sirex.cetcolsubsidio.edu.co/firmas/FD_89.PNG');
+				pRutaFirma = data[0].RutaFirma;
+                $("#txtRutaFirma").val('../vista/images/firmas/'+pRutaFirma.substr(20));
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");
