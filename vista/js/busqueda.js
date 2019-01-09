@@ -125,6 +125,7 @@ $(function() {
 			{ title: "Programa" },
 			{ title: "Curso" },
 			{ title: "Fecha" },
+			{ title: "Tipo Certificado" },
 			{ title: "Descarga", data: null, className: "center", defaultContent: '<a id="descargar-link" class="descargar-link" href="#" title="Edit">Descargar</a>'}
 			],
 			"paging":   false,
@@ -183,14 +184,74 @@ $(function() {
 		        $("#txtNumeroIdentificacion").val(data[0].NumeroIdentificacion);
 		        $("#txtLugarExpedicion").val(data[0].LugarExpedicion);
 		        $("#txtEstudiante").val(data[0].Estudiante);
-		        $("#txtCurso").val(data[0].Curso);
-		        $("#txtModulo").val(data[0].Modulo);
+		        //----- Para organizar en cuantas lineas va el nombre del modulo -----//
+		        if((data[0].Modulo).length > 48){
+		        	var modulo = (data[0].Modulo).split(" ");
+					var i;
+					var nombreModulo = "";
+					var nombreModulo1 = "";
+					for (i = 0; i < modulo.length; i++) { 
+						if((nombreModulo.length + modulo[i].length < 67) && (nombreModulo1 == "")){
+					  		nombreModulo += modulo[i] + " ";
+						}else{
+							nombreModulo1 += modulo[i] + " ";
+						}
+					}
+					$("#txtModulo").val(nombreModulo);
+					$("#txtModulo1").val(nombreModulo1);
+		        }else{
+		        	$("#txtModulo").val(data[0].Modulo);
+		        }
+		        //----- Para organizar en cuantas lineas va el nombre del curso -----//
+		        if((data[0].Curso).length > 49){
+		        	var curso = (data[0].Curso).split(" ");
+					var i;
+					var nombreCurso = "";
+					var nombreCurso1 = "";
+					for (i = 0; i < curso.length; i++) { 
+						if((nombreCurso.length + curso[i].length < 50) && (nombreCurso1 == "")){
+					  		nombreCurso += curso[i] + " ";
+					  		console.log(nombreCurso);
+						}else{
+							nombreCurso1 += curso[i] + " ";
+							console.log(nombreCurso1);
+						}
+					}
+					$("#txtCurso").val(nombreCurso);
+					console.log($("#txtCurso").val());
+					$("#txtCurso1").val(nombreCurso1);
+					console.log($("#txtCurso1").val());
+		        }else{
+		        	$("#txtCurso").val(data[0].Curso);
+		        }
+		        if(data[0].TipoCertificado == "405"){
+			        if((data[0].Modulo).length > 48){
+			        	if((data[0].Curso).length > 49){
+			        		$("#txtFormatoCertificado").val("1");
+			        	}else{
+			        		$("#txtFormatoCertificado").val("2");
+			        	}
+			        }else{
+			        	if((data[0].Curso).length > 49){
+			        		$("#txtFormatoCertificado").val("3");
+			        	}else{
+			        		$("#txtFormatoCertificado").val("4");
+			        	}
+			        }
+			    }else{
+			    	if((data[0].Curso).length > 49){
+		        		$("#txtFormatoCertificado").val("5");
+		        	}else{
+		        		$("#txtFormatoCertificado").val("6");
+		        	}
+			    }
 		        $("#txtDuracion").val(data[0].Duracion);
 		        $("#txtConvenio").val(data[0].Convenio);
 				$("#txtRuta").val(data[0].Ruta);
 				$("#txtNombreSecretaria").val(data[0].NombreSecretaria);
-				pRutaFirma = data[0].RutaFirma;
+				var pRutaFirma = data[0].RutaFirma;
                 $("#txtRutaFirma").val('../vista/images/firmas/'+pRutaFirma.substr(20));
+                $("#txtTipoCertificado").val(data[0].TipoCertificado);
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");
