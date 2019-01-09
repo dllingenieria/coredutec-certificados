@@ -112,11 +112,12 @@ $(function() {
 
 	//----- Crea la tabla y carga la información -----//
 	function cargarInformacionEnTabla(data){
+        $('#tablaCertificados').empty();
 		//se destruye el datatable al inicio
-		if(typeof table !== "undefined"){
-            table.destroy(); 
-            $('#tablaCertificados').empty();
-        }
+		// if(typeof table !== "undefined"){
+  //           table.destroy(); 
+  //           $('#tablaCertificados').empty();
+  //       }
 		table = $('#tablaCertificados').DataTable({
 			"data": data,
 			columns: [
