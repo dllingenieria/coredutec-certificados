@@ -63,6 +63,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo'];
 						        $modulo2 = $_REQUEST['txtModulo1']."del curso";
 						        $curso1 = $_REQUEST['txtCurso'];
@@ -220,6 +221,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo'];
 						        $modulo2 = $_REQUEST['txtModulo1']."del curso";
 						        $curso1 = $_REQUEST['txtCurso'];
@@ -372,6 +374,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo']." del curso";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        $curso2 = $_REQUEST['txtCurso1'];
@@ -523,6 +526,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo = "Asistió al módulo ".$_REQUEST['txtModulo']." del curso";
 						        $curso = $_REQUEST['txtCurso'];
 						        break;
@@ -672,6 +676,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo = "Asistió al curso";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        $curso2 = $_REQUEST['txtCurso1'];
@@ -823,6 +828,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						        break;
 						    case '4':
 						    case '5':
+						    case '7':
 						        $modulo = "Asistió al curso";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        break;
