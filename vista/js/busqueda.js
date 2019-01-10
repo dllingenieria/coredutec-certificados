@@ -11,20 +11,22 @@ $(function() {
 		if($('input:radio[name=radBusqueda]:checked').val() == 'registro'){
 			$("#numeroRegistro").show();
 			$("#numeroDocumento").hide();
-			if(typeof table !== "undefined"){
-	            table.destroy(); 
-	            $('#tablaCertificados').empty();
-	        }
+			// if(typeof table !== "undefined"){
+	  //           table.destroy(); 
+	  //           $('#tablaCertificados').empty();
+	  //       }
 	        $("#txtNRegistro").val('');
 	        document.getElementById("txtNRegistro").focus(); 
 		}else{
 			$("#numeroRegistro").hide();
 			$("#numeroDocumento").show();
-			if(typeof table !== "undefined"){
-	            table.destroy(); 
-	            $('#tablaCertificados').empty();
-	        }
+			// if(typeof table !== "undefined"){
+	  //           table.destroy(); 
+	  //           $('#tablaCertificados').empty();
+	  //       }
 	        $("#txtNDocumento").val('');
+	        cargarListas('cmbTipoDocumento','SPCARGARTIPOIDENTIFICACION');
+	        cargarValorSelected('#cmbTipoDocumento','3',1000);
 			document.getElementById("txtNDocumento").focus();
 		}
     });
@@ -112,12 +114,11 @@ $(function() {
 
 	//----- Crea la tabla y carga la información -----//
 	function cargarInformacionEnTabla(data){
-        $('#tablaCertificados').empty();
 		//se destruye el datatable al inicio
-		// if(typeof table !== "undefined"){
-  //           table.destroy(); 
-  //           $('#tablaCertificados').empty();
-  //       }
+		if(typeof table !== "undefined"){
+            table.destroy(); 
+            $('#tablaCertificados').empty();
+        }
 		table = $('#tablaCertificados').DataTable({
 			"data": data,
 			columns: [
