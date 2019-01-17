@@ -36,7 +36,12 @@ $(function() {
 		if($("#txtNRegistro").val() == ''){
 			mostrarPopUpError("Por favor ingrese la información solicitada");
 		}else{
-			consultarCertificadosPorRegistro();
+			registro = $("#txtNRegistro").val();
+			if( registro.indexOf(" ") >= 0){
+				mostrarPopUpError("Código de certificado no válido");
+			}else{
+				consultarCertificadosPorRegistro();
+			}
 		}
 	});
 
@@ -48,7 +53,12 @@ $(function() {
 			if($("#txtNDocumento").val() == ''){
 				mostrarPopUpError("Por favor escriba un Número de Documento");
 			}else{
-				consultarCertificadosPorDocumento();
+				documento = $("#txtNDocumento").val();
+				if(documento.indexOf(" ") >= 0){
+					mostrarPopUpError("Número de identificación no válido");
+				}else{
+					consultarCertificadosPorDocumento();
+				}
 			}
 		}
 	});
