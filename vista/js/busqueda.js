@@ -135,7 +135,7 @@ $(function() {
 			{ title: "Id" },
 			{ title: "Código" },
 			{ title: "Programa" },
-			{ title: "Curso" },
+			{ title: "Capacitación" },
 			{ title: "Fecha Expedición" },
 			{ title: "Tipo Certificado" },
 			{ title: "Descarga", data: null, className: "center", defaultContent: '<a id="descargar-link" class="descargar-link" href="#" title="Edit">Descargar</a>'}

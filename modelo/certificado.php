@@ -159,9 +159,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
@@ -312,9 +317,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
@@ -465,9 +475,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
@@ -612,9 +627,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
@@ -767,9 +787,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
@@ -914,9 +939,14 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Personería jurídica Nº. 9150 de oct. 22 de 2010"),0,2,'C');
 						$this->Ln(5);
 						$this->Cell(260,0,utf8_decode("VIGILADA MINEDUCACIÓN"),0,2,'C');
-						$this->Ln(7);
+						//Codigo QR
+						$this->Image('../vista/images/qr_certificados.png',55,185,25);
+						$this->Ln(9);
 						$this->SetFont('Arial','',8);
-						$this->Cell(260,10,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
+						$this->Cell(260,0,utf8_decode("La autenticidad de este documento puede ser verificada en el registro que se encuentra en"),0,2,'C');
+						$this->Ln(3);
+						$this->SetFont('Arial','',8);
+						$this->Cell(260,0,utf8_decode("la página web https://certificados.cetcolsubsidio.edu.co bajo el código ".$_REQUEST['txtCodigoCertificado']),0,2,'C');
 						//---- FIN HORIZONTAL -------
 					}
 				}
