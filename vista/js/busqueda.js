@@ -196,24 +196,6 @@ $(function() {
 		        $("#txtNumeroIdentificacion").val(data[0].NumeroIdentificacion);
 		        $("#txtLugarExpedicion").val(data[0].LugarExpedicion);
 		        $("#txtEstudiante").val(data[0].Estudiante);
-		        //----- Para organizar en cuantas lineas va el nombre del modulo -----//
-		        if((data[0].Modulo).length > 48){
-		        	var modulo = (data[0].Modulo).split(" ");
-					var i;
-					var nombreModulo = "";
-					var nombreModulo1 = "";
-					for (i = 0; i < modulo.length; i++) { 
-						if((nombreModulo.length + modulo[i].length < 67) && (nombreModulo1 == "")){
-					  		nombreModulo += modulo[i] + " ";
-						}else{
-							nombreModulo1 += modulo[i] + " ";
-						}
-					}
-					$("#txtModulo").val(nombreModulo);
-					$("#txtModulo1").val(nombreModulo1);
-		        }else{
-		        	$("#txtModulo").val(data[0].Modulo);
-		        }
 		        //----- Para organizar en cuantas lineas va el nombre del curso -----//
 		        if((data[0].Curso).length > 49){
 		        	var curso = (data[0].Curso).split(" ");
@@ -249,6 +231,24 @@ $(function() {
 			        	}else{
 			        		$("#txtFormatoCertificado").val("4");
 			        	}
+			        }
+			        //----- Para organizar en cuantas lineas va el nombre del modulo -----//
+			        if((data[0].Modulo).length > 48){
+			        	var modulo = (data[0].Modulo).split(" ");
+						var i;
+						var nombreModulo = "";
+						var nombreModulo1 = "";
+						for (i = 0; i < modulo.length; i++) { 
+							if((nombreModulo.length + modulo[i].length < 67) && (nombreModulo1 == "")){
+						  		nombreModulo += modulo[i] + " ";
+							}else{
+								nombreModulo1 += modulo[i] + " ";
+							}
+						}
+						$("#txtModulo").val(nombreModulo);
+						$("#txtModulo1").val(nombreModulo1);
+			        }else{
+			        	$("#txtModulo").val(data[0].Modulo);
 			        }
 			    }else{
 			    	if((data[0].Curso).length > 49){
