@@ -133,12 +133,12 @@ $(function() {
 			"data": data,
 			columns: [
 			{ title: "Id" },
+			{ title: "Descarga", data: null, className: "center", defaultContent: '<a id="descargar-link" class="descargar-link" href="#" title="Edit">Descargar</a>'},
 			{ title: "Código" },
 			{ title: "Programa" },
 			{ title: "Capacitación" },
 			{ title: "Fecha Expedición" },
-			{ title: "Tipo Certificado" },
-			{ title: "Descarga", data: null, className: "center", defaultContent: '<a id="descargar-link" class="descargar-link" href="#" title="Edit">Descargar</a>'}
+			{ title: "Tipo Certificado" }
 			],
 			"paging":   false,
 			"info":     false,
