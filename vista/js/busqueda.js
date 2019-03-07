@@ -77,11 +77,13 @@ $(function() {
 					jsRemoveWindowLoad();
 				}else{
 					jsRemoveWindowLoad();
+					$('#tablaCertificados').empty();
 					mostrarPopUpError("No existen certificados con los datos suministrados");
 					document.getElementById("txtNRegistro").focus();
 				}             
 			}else {
 				jsRemoveWindowLoad();
+				$('#tablaCertificados').empty();
 				mostrarPopUpError("No existen certificados con los datos suministrados");
 				document.getElementById("txtNRegistro").focus();
 			}
@@ -105,11 +107,13 @@ $(function() {
 					jsRemoveWindowLoad();
 				}else{
 					jsRemoveWindowLoad();
+					$('#tablaCertificados').empty();
 					document.getElementById("txtNDocumento").focus();
 					mostrarPopUpError("No existen certificados con los datos suministrados");
 				}             
 			}else {
 				jsRemoveWindowLoad();
+				$('#tablaCertificados').empty();
 				document.getElementById("txtNDocumento").focus();
 				mostrarPopUpError("No existen certificados con los datos suministrados");
 			}
