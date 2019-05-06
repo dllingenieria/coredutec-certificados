@@ -55,7 +55,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo'];
 						        $modulo2 = $_REQUEST['txtModulo1']."del ";
 						        $curso1 = $_REQUEST['txtCurso'];
@@ -219,7 +219,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo'];
 						        $modulo2 = $_REQUEST['txtModulo1']."del ";
 						        $curso1 = $_REQUEST['txtCurso'];
@@ -377,7 +377,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo1 = "Asistió al módulo ".$_REQUEST['txtModulo']." del ";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        $curso2 = $_REQUEST['txtCurso1'];
@@ -535,7 +535,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo = "Asistió al módulo ".$_REQUEST['txtModulo']." del ";
 						        $curso = $_REQUEST['txtCurso'];
 						        break;
@@ -689,7 +689,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo = "Asistió al";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        $curso2 = $_REQUEST['txtCurso1'];
@@ -847,7 +847,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Identificado(a) con ".$_REQUEST['txtTipoIdentificacion']." ".$_REQUEST['txtNumeroIdentificacion']." expedida en ".$_REQUEST['txtLugarExpedicion']),0,2,'C');
 						//Para colocar la leyenda de los módulos y cursos a los que asistió
 						switch ($_REQUEST['txtRuta']) {
-						    case '0':
+						    case '100':
 						        $modulo = "Asistió al";
 						        $curso1 = $_REQUEST['txtCurso'];
 						        break;
