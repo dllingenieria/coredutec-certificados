@@ -52,6 +52,7 @@
                     <label id="lbltexto">
                         <p align="justify">Por favor escriba el Número de Registro del certificado para realizar la consulta, en caso de no conocerlo utilice la búsqueda por documento, a continuación suministre los datos solicitados, esta opción le permite obtener una lista de los certificados que tiene disponibles para descarga.</p>
                         <p align="justify"><span style = "font-style: italic;"><strong><u>Nota</u></strong></span>: Debe tener instalada la aplicación <span style = "font-style: italic;"><strong><u>Adobe Reader</u></strong></span> para visualizar el Certificado, en caso de no tenerla, puede descargar de <a href="https://get.adobe.com/es/reader/" target="_blank">aquí</a>.</p>
+                        <p align="center">Clic para visualizar el <a href="https://drive.google.com/file/d/1lWnyaCa9o5NXvfiZrdNLXAKpfxmPB-oq/view?usp=sharing" target="_blank">Manual para descargar certificados</a>.</p>
                     </label>
                 </div>
                 <div style="text-align: center;">
@@ -73,7 +74,7 @@
                     <label id = "lblTDocumento" class="titulo azul compacto">Tipo de Documento</label>
                     <select id="cmbTipoDocumento" class="campo" type="text" tabindex="1"></select>
                     <label id = "lblNDocumento" class="titulo azul compacto">Número de Documento</label>
-                    <input id="txtNDocumento" class="campo" type="text" tabindex="2" maxlength="10">
+                    <input id="txtNDocumento" class="campo" type="text" tabindex="2" maxlength="20">
                     <button id="btnConsultar2" class="boton" tabindex="3">Consultar</button>
                 </div>
                 <table id="tablaCertificados" class="display compact" cellspacing="0" width="100%"></table>
@@ -89,12 +90,16 @@
             <input type="hidden" id="txtLugarExpedicion" name="txtLugarExpedicion"/>
             <input type="hidden" id="txtEstudiante" name="txtEstudiante"/>
             <input type="hidden" id="txtCurso" name="txtCurso"/>
+            <input type="hidden" id="txtCurso1" name="txtCurso1"/>
             <input type="hidden" id="txtModulo" name="txtModulo"/>
+            <input type="hidden" id="txtModulo1" name="txtModulo1"/>
             <input type="hidden" id="txtDuracion" name="txtDuracion"/>
             <input type="hidden" id="txtConvenio" name="txtConvenio"/>
             <input type="hidden" id="txtRuta" name="txtRuta"/>
             <input type="hidden" id="txtNombreSecretaria" name="txtNombreSecretaria"/>
             <input type="hidden" id="txtRutaFirma" name="txtRutaFirma"/>
+            <input type="hidden" id="txtTipoCertificado" name="txtTipoCertificado"/>
+            <input type="hidden" id="txtFormatoCertificado" name="txtFormatoCertificado"/>
             </form>
         </section>
         <!-- FIN CUERPO -->
