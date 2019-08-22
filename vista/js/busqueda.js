@@ -262,6 +262,8 @@ $(function() {
 				var pRutaFirma = data[0].RutaFirma;
                 $("#txtRutaFirma").val('../vista/images/firmas/'+pRutaFirma.substr(20));
                 $("#txtTipoCertificado").val(data[0].TipoCertificado);
+				$("#txtFechaInicial").val(data[0].FechaInicial);
+				$("#txtFechaFinal").val(data[0].FechaFinal);
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");

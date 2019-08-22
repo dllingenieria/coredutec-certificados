@@ -47,7 +47,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -90,11 +90,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],108,133);
 						//Salto de línea
-						$this->Ln(30);
+						$this->Ln(28);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
@@ -207,11 +209,11 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
 						//this->Ln(20);
 						
-						$this->Ln(17);
+						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -248,11 +250,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],108,130);
 						//Salto de línea
-						$this->Ln(30);
+						$this->Ln(28);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
@@ -365,11 +369,11 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
 						//this->Ln(20);
 						
-						$this->Ln(17);
+						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -406,11 +410,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],108,131);
 						//Salto de línea
-						$this->Ln(28);
+						$this->Ln(26);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
@@ -523,11 +529,11 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
 						//this->Ln(20);
 						
-						$this->Ln(19);
+						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -558,11 +564,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],108,130);
 						//Salto de línea
-						$this->Ln(30);
+						$this->Ln(28);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
@@ -677,11 +685,11 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
 						//this->Ln(20);
 						
-						$this->Ln(17);
+						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -718,11 +726,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],115,130);
 						//Salto de línea
-						$this->Ln(28);
+						$this->Ln(26);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
@@ -835,11 +845,11 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
 						//this->Ln(20);
 						
-						$this->Ln(19);
+						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
 						$this->Cell(260,0,utf8_decode("HACE CONSTAR QUE:"),0,2,'C');
-						$this->Ln(9);
+						$this->Ln(7);
 						$this->SetFont('Arial','B',25);
 						$this->Cell(260,0,utf8_decode($_REQUEST['txtEstudiante']),0,2,'C');
 						$this->Ln(8);
@@ -870,11 +880,13 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 						$this->Ln(8);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(260,0,utf8_decode("Con una duración total de ".$_REQUEST['txtDuracion']),0,2,'C');
+						$this->Ln(7);
+						$this->Cell(260,0,utf8_decode("Del ".$_REQUEST['txtFechaInicial']." al ".$_REQUEST['txtFechaFinal']),0,2,'C');
 						
 						//Firma
 						$this->Image($_REQUEST['txtRutaFirma'],115,130);
 						//Salto de línea
-						$this->Ln(30);
+						$this->Ln(28);
 						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
