@@ -264,6 +264,7 @@ $(function() {
                 $("#txtTipoCertificado").val(data[0].TipoCertificado);
 				$("#txtFechaInicial").val(data[0].FechaInicial);
 				$("#txtFechaFinal").val(data[0].FechaFinal);
+				$("#txtLogos").val(data[0].Logos);
 				$("#frmCertificadoModulo").submit();
 			}		
 		}, "json");

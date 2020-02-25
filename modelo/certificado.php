@@ -12,31 +12,57 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,57,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(30);
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,57,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}
 						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
@@ -178,37 +204,61 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,60,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(32);
-						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,60,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(32);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
-						//this->Ln(20);
-						
+						//this->Ln(20);						
 						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
@@ -338,37 +388,61 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,60,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(32);
-						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,60,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(32);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}						
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
 						$this->Cell(260,0,utf8_decode("Autorización oficial según Resolución No. 9150 del 22 de octubre de 2010 del Ministerio de Educación Nacional"),0,2,'C');
-						//this->Ln(20);
-						
+						//this->Ln(20);						
 						$this->Ln(15);
 						$this->SetFont('Arial','B',15);
 						//Movernos a la derecha
@@ -498,31 +572,56 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,65,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(35);
-						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,65,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(35);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}						
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
@@ -654,31 +753,56 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,60,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(32);
-						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,60,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(32);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}						
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
@@ -814,31 +938,56 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 					//echo Cabecera de página
 					function Header(){
 						//---- HORIZONTAL -------
-						//Marca de agua
-						$this->Image('../vista/images/marcadeagua.png',20,65,240);
-						//Logo
-						$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
-						//Arial bold 15
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-cet.png',104,12,90);
-						//Movernos a la derecha
-						$this->Cell(80);
-						//Título
-						//$this->Cell(30,10,'Title',1,0,'C');
-						$this->Image('../vista/images/logo-airbus.png',217,12,42);
-						//Salto de línea
-						$this->Ln(35);
-						
-						//parte media
-						$this->SetFont('Arial','B',15);
-						//Movernos a la derecha
-						$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
-						//this->Ln(20);
-						
+						switch ($_REQUEST['txtLogos']) {
+							case '1':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua.png',20,65,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',20,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet.png',104,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-airbus.png',217,12,42);
+								//Salto de línea
+								$this->Ln(35);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
+								break;
+							case '2':
+								//Marca de agua
+								$this->Image('../vista/images/marcadeagua2.png',20,59,240);
+								//Logo
+								$this->Image('../vista/images/logo-colsubsidio.png',60,9,64);
+								//Arial bold 15
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(80);
+								//Título
+								//$this->Cell(30,10,'Title',1,0,'C');
+								$this->Image('../vista/images/logo-cet2.png',144,12,90);
+								//Movernos a la derecha
+								$this->Cell(80);								
+								//Salto de línea
+								$this->Ln(30);
+								
+								//parte media
+								$this->SetFont('Arial','B',15);
+								//Movernos a la derecha
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								break;
+						}						
+						//this->Ln(20);						
 						$this->SetFont('Arial','B',10);
 						//Movernos a la derecha
 						$this->Ln(6);
