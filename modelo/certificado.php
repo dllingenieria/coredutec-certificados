@@ -58,7 +58,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}
 						
@@ -250,7 +250,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}
 						//this->Ln(20);						
@@ -434,7 +434,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}						
 						//this->Ln(20);						
@@ -613,12 +613,12 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//Movernos a la derecha
 								$this->Cell(80);								
 								//Salto de línea
-								$this->Ln(30);
+								$this->Ln(35);
 								
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}						
 						//this->Ln(20);						
@@ -799,7 +799,7 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}						
 						//this->Ln(20);						
@@ -979,12 +979,12 @@ if (isset ($_REQUEST['txtCodigoCertificado'])){
 								//Movernos a la derecha
 								$this->Cell(80);								
 								//Salto de línea
-								$this->Ln(30);
+								$this->Ln(35);
 								
 								//parte media
 								$this->SetFont('Arial','B',15);
 								//Movernos a la derecha
-								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO"),0,2,'C');
+								$this->Cell(260,0,utf8_decode("CORPORACIÓN DE EDUCACIÓN TECNOLÓGICA COLSUBSIDIO - AIRBUS GROUP"),0,2,'C');
 								break;
 						}						
 						//this->Ln(20);						
